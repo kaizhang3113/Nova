@@ -1,0 +1,5 @@
+cd Downloads/PicGallery
+ls
+export FLASK_APP=server.py
+flask run
+

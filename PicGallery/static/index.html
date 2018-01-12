@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <!-- navigation bar  -->
+    <nav class ="navbar navbar-default ">
+                <h4>Pictures Gallery</h4>
+    </nav>
+
+    <!-- main part-->
+    <div class="container">
+        <div style="background-color:rgb(180, 227, 243);" class="jumbotron">
+            <h3 style="color:rgb(47, 158, 202);" style="margin:0;width:500px">Gallery</h3>
+            <button  class="filter button"  >
+                <i class="fa fa-plus"></i>
+            </button>
+        </div>
+        <!-- images gallery -->
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 col-xs-12">
+                <div class="thumbnail" >
+                    <img src="pics/1/DSC_0146.jpg" alt="image1">
+                    <ul id="json_data">
+                            <li>[[dd]]</li>
+                            <li>[[tag]]</li>
+                            <li>[[username]]</li>
+                        </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <div class="thumbnail" >
+                        <img src="pics/2/DSC_0082.jpg" alt="image1">
+                        <ul id="json">
+                                <li>[[dd]]</li>
+                                <li>[[tag]]</li>
+                                <li>[[username]]</li>
+                            </ul>
+                    </div>
+            </div>
+            
+            <div class="col-lg-4 col-sm-6 col-xs-12">
+                <div class="thumbnail" >
+                    <img src="pics/3/DSC_0079.jpg" alt="image1">
+                    <ul id="json">
+                            <li>[[dd]]</li>
+                            <li>[[tag]]</li>
+                            <li>[[username]]</li>
+                        </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 col-xs-12">
+                    <div class="thumbnail" >
+                        <img src="pics/4/DSC_0004.jpg" alt="image1">
+                        <ul id="json">
+                                <li>[[dd]]</li>
+                                <li>[[tag]]</li>
+                                <li>[[username]]</li>
+                            </ul>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-sm-6 col-xs-12">
+                        <div class="thumbnail" >
+                            <img src="pics/5/DSC_0001.jpg" alt="image1">
+                            <ul id="json">
+                                    <li>[[dd]]</li>
+                                    <li>[[tag]]</li>
+                                    <li>[[username]]</li>
+                                </ul>
+                        </div>
+                </div>
+                
+
+             
+        </div>
+        
+
+
+
+
+    </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/ajax-custom.js"></script>
+
+        <!-- read json file -->
+        <script>
+          /*  $.getJSON('data.json',function(data){
+                consle.log('ti work');
+            });
+        
+            $.ajax({
+                url:'data.json',
+                dataType:'json',
+                
+            });
+            */
+
+var json_data=
+
+[
+    {
+      "dd": "2016-09-29", 
+      "extention": "image/jpeg", 
+      "id": 1, 
+      "name": "DSC_0146.jpg", 
+      "tag": "Grasslands", 
+      "username": "Traveller"
+    }, 
+    {
+      "dd": "2016-09-29", 
+      "extention": "image/jpeg", 
+      "id": 2, 
+      "name": "DSC_0082.jpg", 
+      "tag": "Sea", 
+      "username": "Traveller"
+    }, 
+    {
+      "dd": "2016-09-29", 
+      "extention": "image/jpeg", 
+      "id": 3, 
+      "name": "DSC_0079.jpg", 
+      "tag": "Sea", 
+      "username": "Partner"
+    }, 
+    {
+      "dd": "2016-09-29", 
+      "extention": "image/jpeg", 
+      "id": 4, 
+      "name": "DSC_0004.jpg", 
+      "tag": "Forest", 
+      "username": "Traveller"
+    }, 
+    {
+      "dd": "2016-09-29", 
+      "extention": "image/jpeg", 
+      "id": 5, 
+      "name": "DSC_0001.jpg", 
+      "tag": "Forest", 
+      "username": "Partner"
+    }, 
+    {
+      "dd": "2018-01-10", 
+      "extention": "image/jpeg", 
+      "id": 6, 
+      "name": "1500518835247.jpg", 
+      "tag": "Test", 
+      "username": "TEst"
+    }
+  ]
+
+        $.each(json_data, function(i,v){
+            
+        });
+
+
+        </script>
+
+    <!-- footer -->
+    <footer class="footer">
+        <p style="color:white">
+            Powered by: Bootstrap,JQuery                                                     
+        </p>
+
+    </footer>
+
+
+
+</body>
+
+
+
+</html>

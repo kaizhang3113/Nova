@@ -1,0 +1,28 @@
+Last login: Fri Jan 12 00:15:04 on ttys000
+zhangkaideMac:~ zhangkai$ pip install Flask
+Requirement already satisfied: Flask in /Library/Python/2.7/site-packages
+Requirement already satisfied: itsdangerous>=0.21 in /Library/Python/2.7/site-packages (from Flask)
+Requirement already satisfied: Jinja2>=2.4 in /Library/Python/2.7/site-packages (from Flask)
+Requirement already satisfied: Werkzeug>=0.7 in /Library/Python/2.7/site-packages (from Flask)
+Requirement already satisfied: click>=2.0 in /Library/Python/2.7/site-packages (from Flask)
+Requirement already satisfied: MarkupSafe>=0.23 in /Library/Python/2.7/site-packages (from Jinja2>=2.4->Flask)
+zhangkaideMac:~ zhangkai$ cd Downloads/PicGallery
+zhangkaideMac:PicGallery zhangkai$ export FLASK_APP=server.py
+zhangkaideMac:PicGallery zhangkai$ flask run
+ * Serving Flask app "server"
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [12/Jan/2018 00:16:33] "GET / HTTP/1.1" 200 -
+init()
+127.0.0.1 - - [12/Jan/2018 00:17:09] "GET / HTTP/1.1" 200 -
+/init
+imageService()
+127.0.0.1 - - [12/Jan/2018 00:18:40] "GET / HTTP/1.1" 200 -
+^CzhangkaideMac:PicGallery zhangkai$ http://127.0.0.1:5000/init
+-bash: http://127.0.0.1:5000/init: No such file or directory
+zhangkaideMac:PicGallery zhangkai$ flask run
+ * Serving Flask app "server"
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [12/Jan/2018 00:21:36] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [12/Jan/2018 00:21:47] "GET /init HTTP/1.1" 200 -
+127.0.0.1 - - [12/Jan/2018 00:22:03] "GET /images HTTP/1.1" 200 -
+
